@@ -1,0 +1,64 @@
+body {
+  margin-top: 75px;
+  box-sizing: border-box;
+  background-color: $body-background;
+}
+
+.navbarContainer {
+  width: 100%;
+  background-color: $top-menu-color;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+.navbarList {
+  margin: 0;
+  list-style: none;
+  height: 50px;
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  border: 1px solid grey;
+  &Item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &.offset {
+      margin: 5px;
+      grid-column: span 12;
+    }
+    &.wallet {
+      grid-column: span 3;
+      border-right: 1px solid grey;
+      width: 100%;
+      border-left: 1px solid grey;
+      color: #969696;
+      font-weight: bold;
+      font-size: 16px;
+      font-family: Arial;
+    }
+    &.account {
+      grid-column: span 3;
+      border-right: 1px solid grey;
+      width: 100%;
+      border-left: 1px solid grey;
+      color: #b1bde7;
+      font-size: 14px;
+      font-family: Arial;
+    }
+    &.notification {
+      grid-column: span 1;
+      border-right: 1px solid grey;
+      width: 100%;
+    }
+    &.exit {
+      grid-column: span 1;
+      border-right: 1px solid grey;
+      width: 100%;
+    }
+  }
+  .topbarIcon {
+    width: 16px;
+    margin: 5px;
+    color: $navbar-topbarIcon;
+  }
+}

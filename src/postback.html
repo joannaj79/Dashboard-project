@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Dashboard</title>
+    <meta name="Dashboard" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbarContainer">
+      <ul class="navbarList">
+        <li class="navbarListItem offset"></li>
+        <li class="navbarListItem wallet">
+          <img
+            src="./assets/icons/wallet.svg"
+            class="topbarIcon"
+            alt="walletImage"
+          /><span>$1500.00</span>
+        </li>
+        <li class="navbarListItem">
+          <img
+            src="./assets/icons/bell.svg"
+            class="topbarIcon"
+            alt="notificationImage"
+          />
+        </li>
+        <li class="navbarListItem account">Leaonardo Dicaprio</li>
+        <li class="navbarListItem">Exit</li>
+      </ul>
+    </nav>
+    <nav class="sidebarContainer">
+      <div class="logoContainer">
+        <div class="logoItem"><a href="index.html">Just do it</a></div>
+        <div class="menuContainer">
+          <img src="./assets/icons/open-menu.svg" class="menu" />
+        </div>
+      </div>
+      <ul class="sidebarList">
+        <li class="sidebarListItem">
+          <img src="./assets/icons/star.svg" class="sidebarListItemIcon" /><a
+            href="general.html"
+            >General</a
+          >
+        </li>
+        <li class="sidebarListItem">
+          <img src="./assets/icons/links.svg" class="sidebarListItemIcon" /><a
+            href="links.html"
+            >Links</a
+          >
+        </li>
+        <li class="sidebarListItem">
+          <img src="./assets/icons/star.svg" class="sidebarListItemIcon" /><a
+            href="details.html"
+            >Details</a
+          >
+        </li>
+        <li class="sidebarListItem">
+          <img src="./assets/icons/star.svg" class="sidebarListItemIcon" /><a
+            href="banners.html"
+            >Banners
+          </a>
+        </li>
+        <li class="sidebarListItem">
+          <img
+            src="./assets/icons/personaldata.svg"
+            class="sidebarListItemIcon"
+          /><a href="personal.html">Personal data</a>
+        </li>
+        <li class="sidebarListItem">
+          <img
+            src="./assets/icons/star.svg"
+            class="sidebarListItemIcon"
+          />Payout
+        </li>
+        <li class="sidebarListItem">
+          <img
+            src="./assets/icons/star.svg"
+            class="sidebarListItemIcon"
+          />Postback
+        </li>
+      </ul>
+      <h1 class="chatName">Your Manager</h1>
+      <div class="chatContainer">
+        <div class="chatImageContainer">
+          <img
+            src="./assets/images/avatar.png"
+            alt="avatarImage"
+            class="chatImage"
+          />
+          <span class="greenDot"></span>
+        </div>
+        <p class="imageName">Mikhael E.</p>
+      </div>
+    </nav>
+    <section class="sectionGeneralContainer">
+      <div class="sectionGeneralHeader">
+        <h1 class="mainHeader">New postback</h1>
+      </div>
+      <h3>You can insert some parameters in this postback:</h3>
+      <div class="postbackContainer">
+        <div class="signupContainer">
+          <h2 class="postbackHeader">Signup:</h2>
+          <textarea
+            placeholder="crm_userId=%user_id"
+            class="postbackTextarea"
+            rows="10"
+          ></textarea>
+        </div>
+        <div class="depositContainer">
+          <h2 class="postbackHeader">Deposit:</h2>
+          <textarea
+            placeholder="crm_userId=%user_id"
+            class="postbackTextarea"
+            rows="10"
+          ></textarea>
+        </div>
+      </div>
+      <div class="selectionArea">
+        <div class="selectionContainer">
+          <h2 class="selectionHeader">Postback type:</h2>
+          <select name="postbackType" class="selectionType">
+            <option value="S2S (http://...)">S2S (http://...)</option>
+            <option value="S2S (http://...)">S2S (http://...)</option>
+            <option value="S2S (http://...)">S2S (http://...)</option>
+            <option value="S2S (http://...)">S2S (http://...)</option>
+            <option value="S2S (http://...)">S2S (http://...)</option>
+          </select>
+        </div>
+        <div class="selectionContainer">
+          <h2 class="selectionHeader">Select countries:</h2>
+          <select name="Select countries" class="selectionType">
+            <option value="Select countries">Select countries</option>
+            <option value="Select countries">Select countries</option>
+            <option value="Select countries">Select countries</option>
+            <option value="Select countries">Select countries</option>
+            <option value="Select countries">Select countries</option>
+          </select>
+        </div>
+        <div class="selectionContainer">
+          <h2 class="selectionHeader">Select:</h2>
+          <select name="Select" class="selectionType">
+            <option value="Select">Select</option>
+            <option value="Select">Select</option>
+            <option value="Select">Select</option>
+            <option value="Select">Select</option>
+            <option value="Select">Select</option>
+          </select>
+        </div>
+      </div>
+      <div class="statusArea">
+        <div class="statusContainer">
+          <h2 class="selectionHeader">NOT send statuses:</h2>
+          <input type="checkbox" name="checkNumber" class="postbackCheckbox" />
+          <label for="checkNumber"> Check number</label><br />
+          <input type="checkbox" name="checkNumber" class="postbackCheckbox" />
+          <label for="checkNumber"> Check number</label><br />
+          <input type="checkbox" name="checkNumber" class="postbackCheckbox" />
+          <label for="checkNumber"> Check number</label><br />
+          <input type="checkbox" name="checkNumber" class="postbackCheckbox" />
+          <label for="checkNumber"> Check number</label><br />
+          <input type="checkbox" name="checkNumber" class="postbackCheckbox" />
+          <label for="checkNumber"> Check number</label><br />
+          <input type="checkbox" name="checkNumber" class="postbackCheckbox" />
+          <label for="checkNumber"> Check number</label><br />
+          <input type="checkbox" name="checkNumber" class="postbackCheckbox" />
+          <label for="checkNumber"> Check number</label><br />
+          <input type="checkbox" name="checkNumber" class="postbackCheckbox" />
+          <label for="checkNumber"> Check number</label><br />
+          <input type="checkbox" name="checkNumber" class="postbackCheckbox" />
+          <label for="checkNumber"> Check number</label><br />
+          <input type="checkbox" name="checkNumber" class="postbackCheckbox" />
+          <label for="checkNumber"> Check number</label><br />
+        </div>
+        <div class="rangeContainer">
+          <h2 class="selectionHeader">Send after:</h2>
+          <label for="range">0 </label>
+          <input
+            type="range"
+            name="range"
+            min="0"
+            max="168"
+            value="104"
+            step="1"
+          />
+          <label for="range">168 h</label>
+        </div>
+      </div>
+    </section>
+
+    <script src="../dist/bundle.js"></script>
+  </body>
+</html>

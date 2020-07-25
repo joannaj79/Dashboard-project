@@ -1,0 +1,19 @@
+@mixin mainHeader {
+  font-size: $main-header-font;
+  color: $main-header-color;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /*change to variable*/
+  padding-bottom: 5px;
+  padding-left: 20px;
+  text-transform: uppercase;
+}
+@mixin headerTwo {
+  font-size: $header-two-font;
+  color: $main-header-color;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /*change to variable*/
+}
+
+@mixin personalHeader {
+  font-size: $personal-header;
+  color: $main-header-color;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /*change to variable*/
+}

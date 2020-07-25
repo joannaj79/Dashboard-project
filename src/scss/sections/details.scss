@@ -1,0 +1,54 @@
+.tableContainer {
+  width: 80%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+.tableHeader {
+  //   display: flex;
+  text-align: center;
+  border-bottom: 1px solid $border-color;
+}
+.tableBody {
+  //   display: flex;
+  text-align: center;
+}
+.tableRow {
+  border-bottom: 1px solid $border-color;
+  &:hover {
+    background-color: $border-color;
+    transition: 0.7s ease-in;
+  }
+  & :nth-child(n) {
+    padding: 20px 0;
+  }
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.pagination a {
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  &:hover {
+    color: orange;
+    cursor: pointer;
+  }
+  &.active {
+    background-color: grey;
+  }
+}
+
+.paginationIcon {
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  &:hover {
+    color: orange;
+    cursor: pointer;
+  }
+}

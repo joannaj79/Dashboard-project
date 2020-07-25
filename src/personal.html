@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Dashboard</title>
+    <meta name="Dashboard" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbarContainer">
+      <ul class="navbarList">
+        <li class="navbarListItem offset"></li>
+        <li class="navbarListItem wallet">
+          <img
+            src="./assets/icons/wallet.svg"
+            class="topbarIcon"
+            alt="walletImage"
+          /><span>$1,500.00</span>
+          <img
+            src="./assets/icons/arrow-down.svg"
+            class="topbarIcon"
+            alt="arrowdownImage"
+          />
+        </li>
+        <li class="navbarListItem bell">
+          <img
+            src="./assets/icons/bell.svg"
+            class="topbarIcon"
+            alt="notificationImage"
+          />
+        </li>
+        <li class="navbarListItem account">
+          <img
+            src="./assets/icons/profile.svg"
+            class="topbarIcon"
+            alt="profileImage"
+          /><span>Leonardo Dicaprio</span>
+        </li>
+        <li class="navbarListItem quit">
+          <img
+            src="./assets/icons/quit.svg"
+            class="topbarIcon"
+            alt="exitImage"
+          />
+        </li>
+      </ul>
+    </nav>
+    <nav class="sidebarContainer">
+      <div class="logoContainer">
+        <div class="logoItem">Just do it</div>
+        <div class="menuContainer">
+          <img src="./assets/icons/open-menu.svg" class="menu" />
+        </div>
+      </div>
+      <ul class="sidebarList">
+        <li class="sidebarListItem">
+          <img src="./assets/icons/general.svg" class="sidebarListItemIcon" /><a
+            href="general.html"
+            class="sidebarListItemLink"
+            >General</a
+          >
+        </li>
+        <li class="sidebarListItem">
+          <img
+            src="./assets/icons/details.svg"
+            class="sidebarListItemIcon"
+          />Details
+        </li>
+        <li class="sidebarListItem">
+          <img
+            src="./assets/icons/links.svg"
+            class="sidebarListItemIcon"
+          />Links
+        </li>
+        <li class="sidebarListItem">
+          <img
+            src="./assets/icons/banners.svg"
+            class="sidebarListItemIcon"
+          />Banners
+        </li>
+        <li class="sidebarListItem">
+          <img
+            src="./assets/icons/personaldata.svg"
+            class="sidebarListItemIcon"
+          />Personal data
+        </li>
+        <li class="sidebarListItem">
+          <img
+            src="./assets/icons/payout.svg"
+            class="sidebarListItemIcon"
+          />Payout
+        </li>
+        <li class="sidebarListItem">
+          <img
+            src="./assets/icons/postback.svg"
+            class="sidebarListItemIcon"
+          />Postback
+        </li>
+      </ul>
+    </nav>
+    <section>
+      <div class="personalDataContainer">
+        <div class="personalHeader">
+          <h1 class="mainHeader">Personal Data</h1>
+        </div>
+        <div class="personalDataContent">
+          <div class="personalDataContentRow">
+            <label class="personalDataContentRowLabel">Name</label>
+            <input
+              class="formInput"
+              type="text"
+              name="name"
+              placeholder="Leonardo"
+              autocomplete="off"
+            />
+          </div>
+          <div class="personalDataContentRow">
+            <label class="personalDataContentRowLabel">Surname</label>
+            <input
+              class="formInput"
+              type="text"
+              name="surname"
+              placeholder="Dicaprio"
+              autocomplete="off"
+            />
+          </div>
+          <div class="personalDataContentRow">
+            <label class="personalDataContentRowLabel">E-mail</label>
+            <input
+              class="formInput"
+              type="email"
+              name="email"
+              placeholder="leo@gmail.com"
+              autocomplete="off"
+            />
+          </div>
+          <div class="personalDataContentRow">
+            <label class="personalDataContentRowLabel">Phone number</label>
+            <input
+              class="formInput"
+              type="text"
+              name="phonenumber"
+              placeholder="+48 1234 666"
+              autocomplete="off"
+            />
+          </div>
+        </div>
+        <div class="personalDataContent">
+          <div class="personalDataContentRow">
+            <label class="personalDataContentRowLabel">Skype</label>
+            <input
+              class="formInput"
+              type="text"
+              name="skype"
+              placeholder="Leonardo.Di"
+            />
+          </div>
+          <div class="personalDataContentRow">
+            <label class="personalDataContentRowLabel">ICQ</label>
+            <input class="formInput" type="text" name="icq" placeholder="" />
+          </div>
+          <div class="personalDataContentRow">
+            <label class="personalDataContentRowLabel">MSN</label>
+            <input class="formInput" type="text" name="msn" placeholder="" />
+          </div>
+        </div>
+        <div class="personalDataContent">
+          <div class="personalDataContentRow">
+            <label class="personalDataContentRowLabel">Wallet</label>
+            <input class="formInput" type="text" name="wallet" placeholder="" />
+          </div>
+        </div>
+        <div class="personalDataContent">
+          <div class="personalDataContentRow">
+            <label class="personalDataContentRowLabel">Password</label>
+            <input
+              class="formInput"
+              type="password"
+              name="password"
+              placeholder=""
+            />
+          </div>
+          <div class="personalDataContentRow">
+            <label class="personalDataContentRowLabel">Repeat</label>
+            <input
+              class="formInput"
+              type="password"
+              name="repeat"
+              placeholder=""
+            />
+          </div>
+        </div>
+        <button class="button">Save</button>
+      </div>
+    </section>
+    <script src="../dist/bundle.js"></script>
+  </body>
+</html>

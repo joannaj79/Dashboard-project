@@ -1,0 +1,74 @@
+.sectionLinksContainer {
+  box-sizing: border-box;
+  margin: 15px 15px 15px 15%;
+  width: 80%;
+  border: 1px solid transparent;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(227, 227, 227, 1);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(227, 227, 227, 1);
+  box-shadow: 0px 0px 20px 0px rgba(227, 227, 227, 1);
+  background-color: $background-sections;
+  .sectionLinksHeader {
+    border-bottom: 1px solid $border-color;
+    .mainHeader {
+      @include mainHeader;
+    }
+  }
+  .sectionLinksContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &:hover .Icon .link &item {
+      background-color: green;
+      filter: grey;
+    }
+    .button {
+      @include button;
+      width: 120px;
+      color: $button-font-color;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    &Item {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      justify-content: center;
+      align-items: center;
+      border-top: 1px solid $border-color;
+      width: 60%;
+      margin: 0 auto;
+      &.twitterLine {
+        border-bottom: 1px solid $border-color;
+      }
+      .headerTwo {
+        @include headerTwo;
+        grid-column: span 1;
+      }
+      .link {
+        grid-column: span 3;
+        padding-left: 50px;
+        color: $link-colors;
+        text-decoration: none;
+        &:hover {
+          color: orange;
+        }
+      }
+      .icons {
+        grid-column: span 1;
+      }
+      &:hover .Icon {
+        opacity: 1;
+      }
+    }
+    .Icon {
+      width: 17px;
+      opacity: 0;
+      padding: 20px;
+      cursor: pointer;
+      filter: $filter-for-icons;
+      &:hover {
+        filter: $filter-carrot-orange;
+      }
+    }
+  }
+}

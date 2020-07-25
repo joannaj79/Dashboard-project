@@ -1,0 +1,87 @@
+.sectionGeneralContainer {
+  box-sizing: border-box;
+  margin: 15px 15px 15px 15%;
+  width: 80%;
+  border: 1px solid transparent;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(227, 227, 227, 1);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(227, 227, 227, 1);
+  box-shadow: 0px 0px 20px 0px rgba(227, 227, 227, 1);
+  background-color: $background-sections;
+  .sectionGeneralHeader {
+    border-bottom: 1px solid $border-color;
+    h1 {
+      font-family: sans-serif;
+      color: blue;
+    }
+    .mainHeader {
+      @include mainHeader;
+    }
+  }
+  .sectionGeneralCalender {
+    border-bottom: 1px solid $border-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    margin-bottom: 50px;
+
+    &Item {
+      width: 300px;
+      border: 1px solid $navbar-topbarIcon;
+      border-radius: 2px;
+      min-height: 35px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-right: 10px;
+      .date {
+        margin: 0;
+        padding: 5px;
+      }
+      .vertical-line {
+        border-right: 1px solid $navbar-topbarIcon;
+        height: 25px;
+        width: 1px;
+      }
+      .Icon {
+        width: 17px;
+        height: 17px;
+      }
+    }
+    &Button {
+      @include button;
+      .Icon {
+        width: 17px;
+        height: 17px;
+      }
+    }
+  }
+}
+.sectionGeneralStatistics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  &Container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+    margin: 0 3%;
+    border-bottom: 1px solid $border-color;
+    .stats {
+      padding: 5px;
+    }
+    .Icon {
+      width: 17px;
+      height: 17px;
+    }
+  }
+  &Chart {
+    width: 80%;
+    margin: 50px auto;
+    .headerTwo {
+      @include headerTwo;
+    }
+  }
+}
